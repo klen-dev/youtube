@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  display: flex;
+  margin: 5px auto;
+}
+.form input {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-right: none !important;
+}
+.form button {
+  border: 1px solid #CED4DA !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-left: none !important;
+  color: black;
+  opacity: 0.7;
+}
+.form button :hover {
+  opacity: 1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .container {
+  width: 50%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.header-right {
+  padding-right: 10px;
+  margin: 11px;
+}
+.header-right a {
+  border-radius: 50%;
+}
+.header-right a :hover {
+  background-color: #CED4DA;
+  border-radius: 50%;
+}
+.header-right i {
+  padding: 6px;
+  font-size: 18px;
+  color: black;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.header-left .toggle {
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+}
+.header-left .toggle i {
+  padding: 7px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.header-left .toggle :hover {
+  background-color: #CED4DA;
+}
+.header-left .toggle :focus {
+  outline: none !important;
+}
+.header-left a i {
+  padding-top: 1px;
+  font-size: 25px;
+  color: red;
+}
+
+.card {
+  border: none;
+}
+.card iframe {
+  border-radius: 25px;
+}
+.card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}/*# sourceMappingURL=index.css.map */
