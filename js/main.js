@@ -1,16 +1,20 @@
 const main = document.getElementById("main");
 const row = document.createElement("div");
 const container = document.createElement("div");
+// const seeBtn = document.createElement("see-btn");
+const btn = document.createElement("button");
 
 
 main.appendChild(container);
 container.appendChild(row);
+row.appendChild(btn);
+btn.classList.add("btn");
+
+
 
 row.classList.add("row");
-row.classList.add('mx-2')
+// row.style.paddingRight="5px"
 container.classList.add("container")
-console.log(movies);
-
 var movies = [
   {
     title: "Thank You for Your Service",
@@ -134,20 +138,20 @@ let getMovie = function (movies) {
   res = ""
   for (i of movies) {
     res += `
-      <div class="card col-12 col-lg-4 col-xl-3" ">
-      <iframe height="250px" src="https://www.youtube.com/embed/${i.youtubeId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="card col-12 col-lg-4 col-xl-3 pb-5">
+      <iframe src="https://www.youtube.com/embed/${i.youtubeId}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="d-flex">
-      <span class="card-body"><img src="${i.bigThumbnail}"></span>
+      <span class="p-3"><img src="${i.bigThumbnail}"></span>
       <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">${i.title}</h5>
+      <p class="card-text">${i.categories}</p>
       </div>
       </div>
       </div>
       `
   }
   row.innerHTML = res
+  
 }
 
 getMovie(movies);
