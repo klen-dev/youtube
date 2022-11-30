@@ -85,6 +85,7 @@ header .container {
 }
 .card iframe {
   border-radius: 25px;
+  min-height: 200px;
 }
 .card img {
   width: 50px;
